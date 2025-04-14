@@ -139,7 +139,7 @@ namespace ApiLayer.Controllers
         public async Task<IActionResult> StripeWebhook()
         {
             var json = await new StreamReader(HttpContext.Request.Body).ReadToEndAsync();
-            const string secret = "whsec_e7da4bde36d9d55cc3c6d7959ebbfc052a2ac1b1f3a95c15d01256b5dd347545"; // Replace with actual Stripe webhook secret
+            const string secret = "whsec_1ed1ca106448014f9952f1fc4079a0260eb0e7f9f96e405e41ac7b17bf45f4ee"; // Replace with actual Stripe webhook secret
             try
             {
                 var stripeEvent = EventUtility.ConstructEvent(json, Request.Headers["Stripe-Signature"], secret);
