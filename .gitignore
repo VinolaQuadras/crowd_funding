@@ -1,0 +1,26 @@
+# Ignore node_modules (React)
+node_modules/
+build/
+dist/
+
+# Ignore .NET build folders
+bin/
+obj/
+
+# Ignore Visual Studio specific folders
+.vs/
+appsettings.json
+*.user
+*.suo
+*.vsidx
+
+# Ignore log files
+*.log
+
+# Ignore environment config files
+.env
+.env.local
+
+# Ignore OS/system files
+.DS_Store
+Thumbs.db

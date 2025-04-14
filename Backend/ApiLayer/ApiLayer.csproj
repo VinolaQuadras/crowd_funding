@@ -7,7 +7,24 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+    <PackageReference Include="Dapper" Version="2.1.66" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="6.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.4" />
+    <PackageReference Include="Stripe.net" Version="48.0.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DataStore\DataStore.Abstraction\DataStore.Abstraction.csproj" />
+    <ProjectReference Include="..\DataStore\DataStore.Implementation\DataStore.Implementation.csproj" />
+    <ProjectReference Include="..\FeatureObjects\FeatureObjects.Abstraction\FeatureObjects.Abstraction.csproj" />
+    <ProjectReference Include="..\FeatureObjects\FeatureObjects.Implementation\FeatureObjects.Implementation.csproj" />
   </ItemGroup>
 
 </Project>
